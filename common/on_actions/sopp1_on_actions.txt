@@ -1,0 +1,21 @@
+on_game_start_country = {
+	events = {
+		sopa_controller.0000
+	}
+} 
+
+on_single_player_save_game_load = {
+	events = {
+		
+		sopa_controller.0000
+	}
+}
+
+
+on_custom_diplomacy = {
+	events = {      
+	}
+}
+
+
+

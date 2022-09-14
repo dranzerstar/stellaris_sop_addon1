@@ -1,0 +1,107 @@
+namespace = sopa_controller 
+
+
+
+
+
+
+## 0xxx init
+##
+##
+##
+## 8xxx msg events
+## 9xxx debug
+
+
+
+
+################################################################################
+# 0000 0001 pre-event-delay on_action on_game_start  wait sop init
+# 0002 init controller country, 
+
+
+
+
+# 0000 pre-event-delay on_action on_game_start
+country_event={
+	id = sopa_controller.0000
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		is_ai = no
+	}
+	immediate={  country_event={  id= sopa_controller.0001       days=60 }
+	}
+}
+
+# 0001 pre-event-delay on_action on_game_start
+country_event={
+	id = sopa_controller.0000
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		is_ai = no
+	}
+	immediate={  
+	        if={ 	
+			limit={  NOT = {  has_global_flag = star_oath_project } }    //SOP not installed
+				country_event={  id= sopa_controller.8000  } 
+		}
+		else_if={ 
+			NOT = {	exists = event_target:sopa_controller	}    // init
+                        country_event={  id= sopa_controller.0002  } 
+
+		}
+	}
+}
+
+
+# 0002 init controller country, 
+
+country_event = {
+	id = sopa_controller.0002
+	is_triggered_only = yes
+	hide_window = yes
+
+	trigger = {
+		is_ai = no
+	}
+
+	immediate = {
+		create_country = {
+			name = "NAME_star_oath_country"
+			type = star_oath_project
+			flag = {
+				icon={
+					category="star_oath_project_flags"
+					file="flag_star_oath.dds"
+				}
+				background={
+					category="backgrounds"
+					file="inverted_v.dds"
+				}
+				colors={
+					"black"
+					"indigo"
+					"null"
+					"null"
+				}
+			}
+			effect = {
+				establish_communications_no_message = prev
+				add_opinion_modifier = {
+					who = root
+					modifier = star_oath_base_opinion_modifiers
+				}
+				root = {
+					add_opinion_modifier = {
+						who = prev
+						modifier = star_oath_base_opinion_modifiers
+					}
+				}
+				save_global_event_target_as = sopa_controller
+			}
+		}
+		sop_game_start_effect = yes
+	}
+}
