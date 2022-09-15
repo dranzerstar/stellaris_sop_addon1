@@ -36,7 +36,7 @@ country_event={
 
 # 0001 pre-event-delay on_action on_game_start
 country_event={
-	id = sopa_controller.0000
+	id = sopa_controller.0001
 	is_triggered_only = yes
 	hide_window = yes
 	trigger = {
@@ -44,11 +44,11 @@ country_event={
 	}
 	immediate={  
 	        if={ 	
-			limit={  NOT = {  has_global_flag = star_oath_project } }    //SOP not installed
+			limit={  NOT = {  has_global_flag = star_oath_project } }    #SOP not installed
 				country_event={  id= sopa_controller.8000  } 
 		}
 		else_if={ 
-			NOT = {	exists = event_target:sopa_controller	}    // init
+			limit={ NOT = {	exists = event_target:sopa_controller	} }   # init
                         country_event={  id= sopa_controller.0002  } 
 
 		}
@@ -69,8 +69,8 @@ country_event = {
 
 	immediate = {
 		create_country = {
-			name = "NAME_star_oath_country"
-			type = star_oath_project
+			name = "NAME_sopa_controller"
+			type = sopa_controller
 			flag = {
 				icon={
 					category="star_oath_project_flags"
@@ -88,20 +88,29 @@ country_event = {
 				}
 			}
 			effect = {
-				establish_communications_no_message = prev
-				add_opinion_modifier = {
-					who = root
-					modifier = star_oath_base_opinion_modifiers
-				}
-				root = {
-					add_opinion_modifier = {
-						who = prev
-						modifier = star_oath_base_opinion_modifiers
-					}
-				}
 				save_global_event_target_as = sopa_controller
+				set_country_flag = sopa_controller
 			}
 		}
-		sop_game_start_effect = yes
+		
+	}
+}
+
+
+
+
+
+####################################################################3
+# 8xxx 通知事件
+#
+#
+
+country_event={
+	id = sopa_controller.8000
+	is_triggered_only = yes
+	title = "sopa.8000.title"
+	desc = "sopa.8000.desc"
+	option={
+		name=OK
 	}
 }

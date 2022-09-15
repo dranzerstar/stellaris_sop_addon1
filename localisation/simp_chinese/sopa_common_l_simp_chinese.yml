@@ -1,0 +1,10 @@
+﻿l_simp_chinese:
+#strings
+ NAME_sopa_controller:0 "星之契约后台控制器"
+
+
+# 8xxxx event message
+
+ sopa.8000.title:0 "检测到星之誓约没有安装"
+ sopa.8000.desc:0 "检测到星之誓约没有安装"
+

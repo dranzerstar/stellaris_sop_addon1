@@ -1,0 +1,26 @@
+sopa_controller = {
+	playable = no	
+	has_pulse_events = no	
+	show_in_contacts_list = yes			#but should not show up			
+	minimalist_contacts_list_profile = yes			
+	share_communications = no						
+	default_ships = no								
+	government = no									
+	uses_origins = no		
+	relations = no						
+	ai = {
+		enabled = no								
+	}
+	faction = {										
+		hostile = no
+		needs_border_access = no					
+		generate_borders = no						
+		needs_colony = no							
+		auto_delete = no							
+	}
+	custom_diplomacy = yes
+	modules = {
+		standard_event_module = {}
+		standard_leader_module = {}
+	}
+}
