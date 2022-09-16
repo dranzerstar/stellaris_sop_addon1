@@ -20,6 +20,11 @@ namespace = sopa_controller
 # 0002 init controller country, 
 
 
+# 0100 become crisis activated
+#
+#
+
+
 
 
 # 0000 pre-event-delay on_action on_game_start
@@ -97,13 +102,43 @@ country_event = {
 }
 
 
+#启动天灾
+country_event={
+	id = sopa_controller.0100
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		
+	}
+	immediate={  set_country_flag = sopa_player   
+		event_target:sopa_controller={
+			set_country_flag = sopa_activate
+
+
+		}
+
+	}
+	
+	after = {
+		country_event = { id = sopa_player.8100 days = 1 }
+		enable_special_project = {
+			name = SOPA_DESTROY_SOP_1
+		}
+	}
+}
+
+
+
+
+
+
 
 
 
 ####################################################################3
 # 8xxx 通知事件
 #
-#
+# 81xx 成为天灾触发事件
 
 country_event={
 	id = sopa_controller.8000
@@ -114,3 +149,10 @@ country_event={
 		name=OK
 	}
 }
+
+
+
+
+
+
+

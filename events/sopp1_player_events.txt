@@ -1,0 +1,46 @@
+namespace = sopa_player 
+
+
+
+
+
+
+## 
+##
+##
+##
+## 8xxx msg events
+## 9xxx debug
+
+
+
+
+
+####################################################################3
+# 8xxx 通知事件
+#
+# 81xx 成为天灾触发事件
+# 811x 完成破环星之誓约通知事件
+
+country_event={
+	id = sopa_player.8100
+	is_triggered_only = yes
+	title = "sopa.8100.title"
+	desc = "sopa.8100.desc"
+	option={
+		name=OK
+	}
+}
+
+
+country_event={
+	id = sopa_player.8119
+	is_triggered_only = yes
+	title = "sopa.8119.title"
+	desc = "sopa.8119.desc"
+	option={
+		name=OK
+	}
+}
+
+

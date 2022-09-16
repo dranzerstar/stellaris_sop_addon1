@@ -1,0 +1,27 @@
+
+
+special_project = {
+	key = "SOPA_DESTROY_SOP_1"
+	cost = {
+		base = 50000
+
+	}
+	tech_department = physics_technology
+	icon = "gfx/interface/icons/situation_log/situation_log_main_quest.dds"
+	picture = GFX_evt_cybernetics
+
+	event_scope = country_event
+
+	requirements = {
+	}
+
+	on_success = {
+
+		owner = {
+			country_event = { id = sopa_player.8119 }
+		}
+	}
+
+	on_fail = {
+	}
+}
