@@ -1,0 +1,44 @@
+# MENACE PERKS
+# menp_name = {
+#	portrait = "GFX_crisis_1_perk_1"	# Icon that will be used to display the perk
+#	modifier = {						# static modifier added to the country for as long as they have the perk
+#		pop_purge_mult = 5.0
+#	}
+#	on_unlock = {						# Effect that will be executed when the country receives perk
+#		log = "Country [This.GetName] received menace perk 'menp_name'"
+#	}
+#	resources = {						# resources for the country that has the perk. Only upkeep and produces are hooked in
+#		category = menace_perks
+#		produces = {
+#			alloys = 1
+#		}
+#		upkeep = {
+#			energy = 1
+#		}
+#	}
+# }
+# usage               has_menace_perk = dfaeqwr
+
+
+
+# # menp_objectives = {
+# # 	portrait = "GFX_crisis_icon_objectives"
+
+# # 	on_unlock = {
+# # 		custom_tooltip = unlocks_menace_objectives
+# # 		owner={ set_country_flag= abc }
+# # 	}
+# # }
+
+menp_sopa_destroy = {
+	portrait = "GFX_crisis_icon_undertaker"
+
+	modifier = {
+		
+	}
+
+	on_unlock = {
+		custom_tooltip = sopa_destroy_proj
+	}
+}
+
