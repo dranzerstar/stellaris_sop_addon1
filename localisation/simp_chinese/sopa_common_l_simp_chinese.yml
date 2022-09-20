@@ -8,3 +8,28 @@
  sopa.8000.title:0 "检测到星之誓约没有安装"
  sopa.8000.desc:0 "检测到星之誓约没有安装"
 
+
+ sopa.8100.title:0 "成为天灾触发事件"
+ sopa.8100.desc:0 "成为天灾触发事件desc"
+ sopa.8119.title:0 "完成破坏星之誓约"
+ sopa.8119.desc:0 "完成破坏星之誓约desc"
+
+
+
+
+
+
+
+
+
+
+
+
+
+# menp menu strings
+
+ menp_sopa_destroy:0 "讨伐星之誓约"
+ menp_sopa_destroy_desc:0 "讨伐星之誓约描述"
+ menp_sopa_destroy_desc:0 "讨伐星之誓约描述tooltip"
+ SOPA_DESTROY_SOP_1:0 "锁定誓约坐标"
+ SOPA_DESTROY_SOP_1_DESC:0 "锁定誓约坐标行动描述"

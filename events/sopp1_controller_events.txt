@@ -18,12 +18,13 @@ namespace = sopa_controller
 ################################################################################
 # 0000 0001 pre-event-delay on_action on_game_start  wait sop init
 # 0002 init controller country, 
-
+# 0003 init destroyed sop contact
 
 # 0100 become crisis activated
 #
 #
 
+# 5xxxx destroyed sop screen
 
 
 
@@ -101,6 +102,47 @@ country_event = {
 	}
 }
 
+country_event = {
+	id = sopa_controller.0003
+	is_triggered_only = yes
+	fire_only_once = yes
+	hide_window = yes
+
+        immediate = {
+
+		create_country = {
+			name = "NAME_star_oath_country"
+			type = star_oath_project_destroyed
+			flag = {
+				icon={
+					category="star_oath_project_flags"
+					file="flag_star_oath.dds"
+				}
+				background={
+					category="backgrounds"
+					file="inverted_v.dds"
+				}
+				colors={
+					"black"
+					"indigo"
+					"null"
+					"null"
+				}
+			}
+			effect = {
+				set_country_flag=star_oath_project_destroyed
+				save_global_event_target_as = sop_destroyed_contact
+				
+			}
+		}
+	}
+
+
+}
+
+
+
+
 
 #启动天灾
 country_event={
@@ -110,7 +152,8 @@ country_event={
 	trigger = {
 		
 	}
-	immediate={  set_country_flag = sopa_player   
+	immediate={  
+			set_country_flag = sopa_player   
 		event_target:sopa_controller={
 			set_country_flag = sopa_activate
 
@@ -131,7 +174,42 @@ country_event={
 
 
 
+####################################################################3
+# 5xxxx 已破坏sop界面
 
+country_event={
+	id = sopa_controller.5000
+	is_triggered_only = yes
+
+	diplomatic = yes
+	custom_gui = star_oath_main_window
+
+	picture_event_data = {
+		##portrait = SOP_alma44_default
+		room = star_oath_room
+	}
+	title = "sopa.5000.title"
+	desc = "sopa.5000.desc"
+
+
+	trigger = {
+		from = {
+			OR = {
+				has_country_flag = star_oath_project_destroyed
+			}
+		}
+	}
+
+	option = {
+		name = "close"
+		custom_gui = "star_oath_none_option"
+		
+	}
+
+	option={
+		name=OK
+	}
+}
 
 
 

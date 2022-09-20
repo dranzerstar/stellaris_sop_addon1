@@ -31,14 +31,14 @@
 # # }
 
 menp_sopa_destroy = {
-	portrait = "GFX_crisis_icon_undertaker"
+	portrait = "GFX_crisis_icon_sopa_hunt"
 
 	modifier = {
 		
 	}
 
 	on_unlock = {
-		custom_tooltip = sopa_destroy_proj
+		custom_tooltip = menp_sopa_destroy_desc
 	}
 }
 

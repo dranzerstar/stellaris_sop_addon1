@@ -22,22 +22,39 @@ namespace = sopa_player
 # 81xx 成为天灾触发事件
 # 811x 完成破环星之誓约通知事件
 
+
 country_event={
 	id = sopa_player.8100
 	is_triggered_only = yes
 	title = "sopa.8100.title"
 	desc = "sopa.8100.desc"
+	immediate = {
+             country_event={ id=sopa_controller.0003 }
+	}
 	option={
 		name=OK
 	}
 }
 
-
+# 8119 完成破环星之誓约通知事件
+#
 country_event={
 	id = sopa_player.8119
 	is_triggered_only = yes
 	title = "sopa.8119.title"
 	desc = "sopa.8119.desc"
+	immediate = {
+		establish_communications_no_message = event_target:sopa_destroyed
+
+
+
+	
+
+		if={    limit={ exists=event_target:star_oath_country  }
+				destroy_country = event_target:star_oath_country 
+		} 
+	}
+
 	option={
 		name=OK
 	}

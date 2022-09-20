@@ -1,0 +1,12 @@
+spriteTypes = {
+
+## Crisis perks
+spriteType = {
+    name = "GFX_crisis_icon_sopa_hunt"
+    texturefile = "gfx/interface/icons/menace_icon_sophunt_72.dds"
+    noOfFrames = 2			
+}
+
+
+
+}
