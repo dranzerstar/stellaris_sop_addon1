@@ -7,6 +7,21 @@ spriteType = {
     noOfFrames = 2			
 }
 
+spriteType = {
+    name = "GFX_star_oath_window_destroyed_bg"
+    texturefile = "gfx/interface/star_oath_destroyed_window_bg.dds"
+    effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+
+}
+
+spriteType = {
+    name = "GFX_star_oath_protrait_window_destroyed_bg"
+    texturefile = "gfx/interface/star_oath_window_protrait_destroyed.dds"
+    effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+
+}
+
+
 
 
 }

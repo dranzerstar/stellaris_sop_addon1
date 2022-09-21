@@ -1,0 +1,620 @@
+guiTypes = {
+	extendedScrollbarType = {
+		name = "star_oath_right_vertical_slider"
+		position = { x = -60 y = 0 }
+ 		size = { width = 18 height = 18 }
+		startValue = 50
+
+		background = {
+			name = "Background"	
+			quadTextureSprite = "GFX_tiled_window_transparent"
+		}
+		
+		track = {
+			name = "Track"
+			quadTextureSprite = "GFX_ncp_scroll_bg"
+			position = { x = 3 y = 0 }
+		}	
+		
+		slider = {
+			name = "Slider"	
+			quadTextureSprite = "GFX_ncp_scroll_slider"
+			position = { x = -2 y = 0 }
+		}
+	}
+	containerWindowType = {
+		name = "star_oath_main_window_option"
+		position = { x=0 y=0 }
+		size = { width = 232 height = 38 }
+		moveable = no
+		
+		buttonType = {
+			name = "option_button"
+			quadTextureSprite = "GFX_star_oath_main_option_box" 
+			position = { x=0 y=0 }
+			font = "cg_16b"
+			text = "OPTION_TEXT"
+			oversound = "mouse_over"
+			clicksound = "sop_button_sound_hit"
+		}
+
+		OverlappingElementsBoxType = {
+			name = "trigger_icons"
+			position = { x = 0  y = 10 }
+			size = { x=65 y= 28 }
+		}
+	}
+	containerWindowType = {
+		name = "star_oath_select_window_option"
+		position = { x=0 y=0 }
+		size = { width = 220 height = 36 }
+		moveable = no
+		
+		buttonType = {
+			name = "option_button"
+			quadTextureSprite = "GFX_star_oath_initialize_option_box" 
+			position = { x=0 y=8 }
+			font = "cg_16b"
+			text = "OPTION_TEXT"
+			oversound = "mouse_over"
+			clicksound = "sop_button_sound_hit"
+		}
+
+		OverlappingElementsBoxType = {
+			name = "trigger_icons"
+			position = { x = 0  y = 10 }
+			size = { x=65 y= 28 }
+		}
+	}
+	containerWindowType = {
+		name = "star_oath_select_window_small_option"
+		position = { x=0 y=0 }
+		size = { width = 165 height = 30 }
+		moveable = no
+		
+		buttonType = {
+			name = "option_button"
+			quadTextureSprite = "GFX_star_oath_initialize_option_box_small" 
+			position = { x=0 y=8 }
+			font = "cg_16b"
+			text = "OPTION_TEXT"
+			oversound = "mouse_over"
+			clicksound = "sop_button_sound_hit"
+		}
+
+		OverlappingElementsBoxType = {
+			name = "trigger_icons"
+			position = { x = 0  y = 10 }
+			size = { x=65 y= 28 }
+		}
+	}
+	containerWindowType = {
+		name = "star_oath_normal_window_option"
+		position = { x=0 y=0 }
+		size = { width = 458 height = 30 }
+		moveable = no
+		
+		buttonType = {
+			name = "option_button"
+			quadTextureSprite = "GFX_star_oath_normal_window_option_box" 
+			position = { x=0 y=8 }
+			font = "cg_16b"
+			text = "OPTION_TEXT"
+			oversound = "mouse_over"
+			clicksound = "sop_button_sound_hit"
+		}
+
+		OverlappingElementsBoxType = {
+			name = "trigger_icons"
+			position = { x = 0  y = 10 }
+			size = { x=65 y= 28 }
+		}
+	}
+	containerWindowType = {
+		name = "star_oath_normal_window_option_ain"
+		position = { x=0 y=0 }
+		size = { width = 458 height = 30 }
+		moveable = no
+		
+		buttonType = {
+			name = "option_button"
+			quadTextureSprite = "GFX_star_oath_normal_window_option_box_ain" 
+			position = { x=0 y=8 }
+			font = "cg_16b"
+			text = "OPTION_TEXT"
+			oversound = "mouse_over"
+			clicksound = "sop_button_sound_hit"
+		}
+
+		OverlappingElementsBoxType = {
+			name = "trigger_icons"
+			position = { x = 0  y = 10 }
+			size = { x=65 y= 28 }
+		}
+	}
+	#back
+	containerWindowType = {
+		name = "star_oath_select_window_portrait_back_option"
+		position = { x=0 y=0 }
+		size = { width = 100 height = 62 }
+		moveable = no
+		
+		buttonType = {
+			name = "option_button"
+			quadTextureSprite = "GFX_star_oath_leader_create_window_close" 
+			position = { x=0 y=0 }
+			font = "cg_16b"
+			text = "OPTION_TEXT"
+			oversound = "mouse_over"
+			clicksound = "sop_button_sound_back"
+		}
+
+		OverlappingElementsBoxType = {
+			name = "trigger_icons"
+			position = { x = 0  y = 10 }
+			size = { x=65 y= 28 }
+		}
+	}
+	#none
+	containerWindowType = {
+		name = "star_oath_none_option"
+		position = { x=0 y=0 }
+		size = { width = 20 height = 20 }
+		moveable = no
+		
+		buttonType = {
+			name = "option_button"
+			quadTextureSprite = "GFX_star_oath_none_option" 
+			position = { x=0 y=0 }
+			font = "cg_16b"
+			text = "OPTION_TEXT"
+		}
+
+		OverlappingElementsBoxType = {
+			name = "trigger_icons"
+			position = { x = 0  y = 10 }
+			size = { x=65 y= 28 }
+		}
+	}
+	#main_window
+	containerWindowType = {
+		name = "star_oath_main_window_destroyed"
+		orientation = center
+		origo = center
+		moveable = yes
+		size = { width = 1700 height = 950 }
+
+		background = { 
+			name = "background" 
+			quadTextureSprite ="GFX_star_oath_window_destroyed_bg" 
+		}
+
+		iconType = { name = "hex_bg" spriteType = "GFX_hex_bg" position = { x = -10000 y = -140000 } alwaysTransparent = yes }
+		iconType = { name = "empire_header_line" quadTextureSprite = "GFX_line_long" position = { x = 60000 y = 22000 } alwaysTransparent = yes }
+
+		buttonType = { #?????????
+			name = "close"
+			quadTextureSprite = "GFX_star_oath_close_button"
+			position = { x= -50 y = 22 }
+			Orientation = "UPPER_RIGHT"
+			shortcut = "ESCAPE"
+			clicksound = "sop_button_sound_back"
+		}
+
+		# Custom header
+		instantTextBoxType = {
+			name = "irm_some_header"
+			font = "malgun_goth_24"
+			text = "ui_faction_header" 	# header text
+			position = { x = 200000 y = 500000 }
+			maxWidth = 543
+			maxHeight = 22
+			fixedSize = yes
+			alwaysTransparent = yes
+		}
+
+		buttonType = { name = "focus_button" position = { x = -1180 y = -1112 } spriteType = "GFX_fleetview_focus" } # hidden
+		instantTextBoxType = { name = "heading" font = "malgun_goth_24" position = { x = -1120 y = -115 } } # hidden
+		buttonType = { name = "alien_message_background" size = { x = 0 y = 0 } position = { x = -1110 y = -11430 } spriteType = "GFX_tiles_dark_area_cut_8" } # hidden
+		buttonType = { name = "confirm_button" quadTextureSprite = "GFX_standard_button_142_34_button" } # hidden
+		containerWindowType = {
+			name = "portrait_background"
+			position = { x = -1117 y = -1145 }
+			size = { width = 0 height = 0 } 	# hide portrait window
+			iconType = { name = "event_picture" spriteType = "GFX_diplomacy_portrait_frame" } # hidden
+			iconType = { name = "portrait" spriteType = "GFX_portrait_character" } # hidden
+		}
+		iconType = { name = "empire_info_bg" spriteType = "GFX_diplomacy_dark_fade_bg" } # hidden
+		instantTextBoxType={ name = "empire_name" font = "malgun_goth_24" } # hidden
+		instantTextBoxType={ name = "empire_government_type" font = "cg_16b" } # hidden
+		instantTextBoxType={ name = "empire_personality_type" font = "cg_16b" } # hidden
+		OverlappingElementsBoxType = { name = "empire_ethics_icons" position = { x = -1145 y = -11138 } } # hidden
+		iconType = { name = "empire_flag" spriteType = "GFX_empire_flag_128" position = { x = -1125 y = -11235 } } # hidden
+		containerWindowType = {
+			name = "leader_details"
+			position = { x = -1125 y = -1175 }
+			containerWindowType = { name = "empire_traits_box" } # hidden
+			instantTextBoxType = { name = "empire_traits_label" font = "cg_16b" } # hidden
+			overlappingElementsBoxType = { name = "leader_traits" } # hidden
+			instantTextBoxType = { name = "leader_name" font = "cg_16b" } # hidden
+			instantTextBoxType = { name = "leader_species" font = "cg_16b" } # hidden
+		}
+		containerWindowType = {
+			name = "opinion_window"
+			position = { x = -1127 y = -11110 }
+			size = { width = 94 height = 30 }
+			iconType = { name = "their_opinion_icon" spriteType = "GFX_diplomacy_opinion" } # hidden
+			instantTextBoxType = { name = "their_opinion" font = "cg_16b" }
+		}
+	
+		### EVENT DIPLO ###
+		#iconType = {
+		#	name = star_oath_main_window_option
+		#	quadTextureSprite = GFX_star_oath_main_window_option
+		#	position = { x = 1110 y = 650 }
+		#	size = { x=500 y=250 }
+		#}
+		containerWindowType = {
+			name = "EVENT_DIPLO"
+			position = { x = 1240 y = 690 }
+			size = { x=250 y=500 }
+			moveable = no
+
+			instantTextBoxType={
+			 name = "action_title"
+			 font = "malgun_goth_24"
+			 position = { x = 20 y = 0 }
+			 maxWidth = 200
+			 alwaysTransparent = yes
+			}
+			instantTextBoxType={
+			 name = "action_desc"
+			 font = "malgun_goth_24"
+			 position = { x = 490 y = 0 }
+			 maxWidth = 500
+			 maxHeight = 180
+			 Orientation = "UPPER_LEFT"
+			 format = center
+			 alwaysTransparent = yes
+			 text_color_code = "H"
+			}
+			listboxType = { 
+				name = "option_list" 
+				position = { x = 0 y = 0 } 
+				size = {x=250 y=500 }
+			}
+		}
+		# Description Section
+		#  iconType = { #????
+		#  	name = star_oath_main_window_title
+		#  	quadTextureSprite = "GFX_star_oath_main_window_title"
+		#  	size = { x = 500 y = 75 }
+		#  	position = { x = 550 y = -10 }
+		#  }
+		  iconType = { 		#???
+		  	name = star_oath_window_protrait_00
+		  	quadTextureSprite = "GFX_star_oath_protrait_window_destroyed_bg"
+		  	size = { width = 500 height = 450 }
+		  	position = { x = 1110 y = 150 }
+		  }
+		# effectbuttonType = { #3344
+		# 	name = star_oath_window_protrait_01
+		# 	quadTextureSprite = "GFX_star_oath_window_protrait_01"
+		# 	size = { width = 500 height = 450 }
+		# 	position = { x = 1110 y = 150 }
+		# 	effect = star_oath_main_portrait_01_effect
+		# }
+		# effectbuttonType = { #44a
+		# 	name = star_oath_window_protrait_02
+		# 	quadTextureSprite = "GFX_star_oath_window_protrait_02"
+		# 	size = { width = 500 height = 450 }
+		# 	position = { x = 1110 y = 150 }
+		# 	effect = star_oath_main_portrait_02_effect
+		# }
+		# effectbuttonType = { #44
+		# 	name = star_oath_window_protrait_03
+		# 	quadTextureSprite = "GFX_star_oath_window_protrait_03"
+		# 	size = { width = 500 height = 450 }
+		# 	position = { x = 1110 y = 150 }
+		# 	effect = star_oath_main_portrait_03_effect
+		# }
+		# effectbuttonType = { #44n
+		# 	name = star_oath_window_protrait_04
+		# 	quadTextureSprite = "GFX_star_oath_window_protrait_04"
+		# 	size = { width = 500 height = 450 }
+		# 	position = { x = 1110 y = 150 }
+		# 	effect = star_oath_main_portrait_04_effect
+		# }
+		# effectbuttonType = { #m
+		# 	name = star_oath_window_protrait_05
+		# 	quadTextureSprite = "GFX_star_oath_window_protrait_05"
+		# 	size = { width = 500 height = 450 }
+		# 	position = { x = 1110 y = 150 }
+		# 	effect = star_oath_main_portrait_05_effect
+		# }
+		# effectbuttonType = { #33
+		# 	name = star_oath_window_protrait_06
+		# 	quadTextureSprite = "GFX_star_oath_window_protrait_06"
+		# 	size = { width = 500 height = 450 }
+		# 	position = { x = 1110 y = 150 }
+		# 	effect = star_oath_main_portrait_06_effect
+		# }
+		# effectbuttonType = { #44m
+		# 	name = star_oath_window_protrait_07
+		# 	quadTextureSprite = "GFX_star_oath_window_protrait_07"
+		# 	size = { width = 500 height = 450 }
+		# 	position = { x = 1110 y = 150 }
+		# 	effect = star_oath_main_portrait_07_effect
+		# }
+		# effectbuttonType = { #3344m
+		# 	name = star_oath_window_protrait_08
+		# 	quadTextureSprite = "GFX_star_oath_window_protrait_08"
+		# 	size = { width = 500 height = 450 }
+		# 	position = { x = 1110 y = 150 }
+		# 	effect = star_oath_main_portrait_08_effect
+		# }
+		containerWindowType = {#????
+			name = "portrait"
+			position = { x = 10000 y = 10000 }
+			size = { width = 500 height = 380 }
+			iconType = { 
+				name = "portrait" 
+				spriteType = "GFX_portrait_gamesetup_mask" 
+				position = { x = 0 y = 0 }
+				size = { width = 500 height = 380 }
+				maxHeight = 380
+				maxWidth = 500
+			}
+			maxHeight = 380
+			maxWidth = 500
+			iconType = { name = "black_frame" spriteType = "GFX_diplomacy_portrait_shadow_frame" position = { x = 100000 y = 100000 } } # hidden
+			iconType = { name = "stripes_1" spriteType = "GFX_diplomacy_stripes_2" position = { x = 100000 y = 100000 } } # hidden
+			iconType = { name = "city_frame" spriteType = "GFX_diplomacy_portrait_frame" position = { x = 100000 y = 100000 } } # hidden
+		}
+		iconType = {
+			name = star_oath_window_protrait_hidden_button
+			quadTextureSprite = GFX_star_oath_window_protrait_hidden_button
+			position = { x = 1110 y = 150 }
+			size = { x = 500 y = 450 }
+		}
+		 iconType = {
+		 	name = star_oath_main_window_desc
+		 	quadTextureSprite = GFX_star_oath_main_window_desc
+		 	position = { x = 1113 y = 450 }
+		 	size = { x = 500 y = 150 }
+		 }
+		instantTextBoxType = { #??
+			name = "alien_message"
+			font = "cg_16b"
+			position = { x = 1160 y = 465 }
+			maxWidth = 410
+			maxHeight = 122
+			scrollbartype = "standardtext_slider"
+		}
+		effectbuttonType = {
+			name = star_coin_main_window
+			quadTextureSprite = GFX_star_coin_main_window
+			position = { x = 1290 y = 75 }
+			size = { x = 250 y = 100 }
+			text = star_coin_main_window_show
+			font = large_title_font
+			format = CENTER_CENTER
+			#effect = the_null_effect
+			effect = disabled_button
+		}
+		effectbuttonType = {
+			name = star_coin_main_window_add
+			quadTextureSprite = GFX_star_coin_main_window_add
+			position = { x = 1540 y = 90 }
+			size = { x = 50 y = 50 }
+			#effect = star_oath_coin_add_effect
+			effect = disabled_button
+			oversound = "mouse_over"
+			clicksound = "sop_button_sound_hit"
+		}
+		effectbuttonType = {
+			name = star_oath_main_button
+			quadTextureSprite = GFX_star_oath_main_button
+			position = { x = 1240 y = 91 }
+			size = { x = 50 y = 50 }
+			#effect = star_oath_setting_effect
+			effect = disabled_button
+			oversound = "mouse_over"
+			clicksound = "sop_button_sound_hit"
+		}
+		effectbuttonType = {
+			name = star_oath_database_button
+			quadTextureSprite = GFX_star_oath_database_button
+			position = { x = 1120 y = 90 }
+			size = { x = 50 y = 50 }
+			#effect = star_oath_database_effect
+			effect = disabled_button
+			oversound = "mouse_over"
+			clicksound = "sop_button_sound_hit"
+		}
+		effectbuttonType = {
+			name = star_oath_eternal_archives_button
+			quadTextureSprite = GFX_star_oath_eternal_archives_button
+			position = { x = 1180 y = 90 }
+			size = { x = 50 y = 50 }
+			#effect = star_oath_eternal_archives_effect
+			effect = disabled_button
+			oversound = "mouse_over"
+			clicksound = "sop_button_sound_hit"
+		}
+		effectbuttonType = {
+			name = star_oath_admin_main_button
+			quadTextureSprite = GFX_star_oath_admin_main_button
+			position = { x = 1060 y = 90 }
+			size = { x = 50 y = 50 }
+			#effect = star_oath_admin_main_effect
+			effect = disabled_button
+			oversound = "mouse_over"
+			clicksound = "sop_button_sound_hit"
+		}
+		effectbuttonType = {
+			name = star_oath_main_windonw_button_01
+			quadTextureSprite = GFX_star_oath_main_windows_button
+			position = { x = 1157 y = 590 }
+			size = { x = 227 y = 75 }
+			text = star_oath_main_windonw_button_01_show
+			font = malgun_goth_24
+			format = CENTER_CENTER
+			#effect = star_oath_main_windonw_button_01_effect
+			effect = disabled_button
+			oversound = "select_click"
+			clicksound = "sop_button_sound_hit"
+		}
+		effectbuttonType = {
+			name = star_oath_main_windonw_button_02
+			quadTextureSprite = GFX_star_oath_main_windows_button
+			position = { x = 1330 y = 590 }
+			size = { x = 227 y = 75 }
+			text = star_oath_main_windonw_button_02_show
+			font = malgun_goth_24
+			format = CENTER_CENTER
+			#effect = star_oath_main_windonw_button_02_effect
+			effect = disabled_button
+			oversound = "select_click"
+			clicksound = "sop_button_sound_hit"
+		}
+		containerWindowType = {
+			name = star_oath_main_window_fation
+			position = {x = 50 y = 100 }
+			size = { width = 1050 height = 800 }
+			#background = { 
+			#	name = "background" 
+			#	quadTextureSprite ="GFX_star_oath_main_window" 
+			#}
+			effectButtonType = { #??
+				name = star_oath_main_window_fation_1
+				quadTextureSprite = "GFX_star_oath_main_window_faction_1"
+				size = { x = 200 y = 200 }
+				position = {x = 50 y = 50 }
+				#effect = star_oath_main_window_fation_1_effect
+				effect = disabled_button
+				oversound = "select_click"
+				clicksound = "sop_button_sound_back"
+			}
+			effectButtonType = { #??
+				name = star_oath_main_window_fation_2
+				quadTextureSprite = "GFX_star_oath_main_window_faction_2"
+				size = { x = 200 y = 200 }
+				position = {x = 300 y = 50 }
+				#effect = star_oath_main_window_fation_2_effect
+				effect = disabled_button
+				oversound = "select_click"
+				clicksound = "sop_button_sound_back"
+			}
+			effectButtonType = { #??
+				name = star_oath_main_window_fation_3
+				quadTextureSprite = "GFX_star_oath_main_window_faction_3"
+				size = { x = 200 y = 200 }
+				position = {x = 550 y = 50 }
+				#effect = star_oath_main_window_fation_3_effect
+				effect = disabled_button
+				oversound = "select_click"
+				clicksound = "sop_button_sound_back"
+			}
+			effectButtonType = { #??
+				name = star_oath_main_window_fation_4
+				quadTextureSprite = "GFX_star_oath_main_window_faction_4"
+				size = { x = 200 y = 200 }
+				position = {x = 800 y = 50 }
+				#effect = star_oath_main_window_fation_4_effect
+				effect = disabled_button
+				oversound = "select_click"
+				clicksound = "sop_button_sound_back"
+			}
+			effectButtonType = { #??
+				name = star_oath_main_window_fation_5
+				quadTextureSprite = "GFX_star_oath_main_window_faction_5"
+				size = { x = 200 y = 200 }
+				position = {x = 50 y = 300 }
+				#effect = star_oath_main_window_fation_5_effect
+				effect = disabled_button
+				oversound = "select_click"
+				clicksound = "sop_button_sound_back"
+			}
+			effectButtonType = { #??
+				name = star_oath_main_window_fation_6
+				quadTextureSprite = "GFX_star_oath_main_window_faction_6"
+				size = { x = 200 y = 200 }
+				position = {x = 300 y = 300 }
+				#effect = star_oath_main_window_fation_6_effect
+				effect = disabled_button
+				oversound = "select_click"
+				clicksound = "sop_button_sound_back"
+			}
+			effectButtonType = { #??
+				name = star_oath_main_window_fation_7
+				quadTextureSprite = "GFX_star_oath_main_window_faction_7"
+				size = { x = 200 y = 200 }
+				position = {x = 550 y = 300 }
+				#effect = star_oath_main_window_fation_7_effect
+				effect = disabled_button
+				oversound = "select_click"
+				clicksound = "sop_button_sound_back"
+			}
+			effectButtonType = { #??
+				name = star_oath_main_window_fation_8
+				quadTextureSprite = "GFX_star_oath_main_window_faction_8"
+				size = { x = 200 y = 200 }
+				position = {x = 800 y = 300 }
+				#effect = star_oath_main_window_fation_8_effect
+				effect = disabled_button
+				oversound = "select_click"
+				clicksound = "sop_button_sound_back"
+			}
+			effectButtonType = { #??
+				name = star_oath_main_window_fation_9
+				quadTextureSprite = "GFX_star_oath_main_window_faction_9"
+				size = { x = 200 y = 200 }
+				position = {x = 50 y = 550 }
+				#effect = star_oath_main_window_fation_9_effect
+				effect = disabled_button
+				oversound = "select_click"
+				clicksound = "sop_button_sound_back"
+			}
+			effectButtonType = { #??
+				name = star_oath_main_window_fation_10
+				quadTextureSprite = "GFX_star_oath_main_window_faction_10"
+				size = { x = 200 y = 200 }
+				position = {x = 300 y = 550 }
+				#effect = star_oath_main_window_fation_10_effect
+				effect = disabled_button
+				oversound = "select_click"
+				clicksound = "sop_button_sound_back"
+			}
+			effectButtonType = { #??
+				name = star_oath_main_window_fation_11
+				quadTextureSprite = "GFX_star_oath_main_window_faction_11"
+				size = { x = 200 y = 200 }
+				position = {x = 550 y = 550 }
+				#effect = star_oath_main_window_fation_11_effect
+				effect = disabled_button
+				oversound = "select_click"
+				clicksound = "sop_button_sound_back"
+			}
+			effectButtonType = { #??
+				name = star_oath_main_window_fation_12
+				quadTextureSprite = "GFX_star_oath_main_window_faction_12"
+				size = { x = 200 y = 200 }
+				position = {x = 800 y = 550 }
+				#effect = star_oath_main_window_fation_12_effect
+				effect = disabled_button
+				oversound = "select_click"
+				clicksound = "sop_button_sound_back"
+			}
+		}
+	}
+	#show window
+
+	#normal window
+	
+
+	#initialize window without coin button
+	
+	#initialize window
+	
+}

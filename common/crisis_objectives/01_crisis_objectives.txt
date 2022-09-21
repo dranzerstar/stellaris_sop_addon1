@@ -1,0 +1,7 @@
+crisobj_hunt_sop_leaders = {
+	reward = {
+		base = 50
+
+		min = 50 		#and we don't want less than 100
+	}
+}

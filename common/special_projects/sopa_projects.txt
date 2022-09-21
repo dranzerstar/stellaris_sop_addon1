@@ -3,7 +3,7 @@
 special_project = {
 	key = "SOPA_DESTROY_SOP_1"
 	cost = {
-		base = 50000
+		base = 1
 
 	}
 	tech_department = physics_technology
@@ -17,9 +17,9 @@ special_project = {
 
 	on_success = {
 
-		owner = {
+		
 			country_event = { id = sopa_player.8119 }
-		}
+		
 	}
 
 	on_fail = {

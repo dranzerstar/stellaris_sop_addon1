@@ -28,8 +28,20 @@
 
 # menp menu strings
 
+ sopa.5000.desc:0 "§R连接失败！连接失败！连接失败！连接失败！连接失败！连接失败！连接失败！连接失败！连接失败！连接失败！连接失败！连接失败！连接失败！连接失败！连接失败！连接失败！连接失败！连接失败！连接失败！连接失败！连接失败！连接失败！连接失败！连接失败！"
+ close:0 "离开"
+
+
+
+
+
  menp_sopa_destroy:0 "讨伐星之誓约"
- menp_sopa_destroy_desc:0 "讨伐星之誓约描述"
- menp_sopa_destroy_desc:0 "讨伐星之誓约描述tooltip"
+ menp_sopa_destroy_desc_tooltip:0 "开展讨伐§Y星枢§!的计划"
+ menp_sopa_destroy_desc:0 "宇宙万物均属我们§R天灾帝国§!，我们不会受任何誓约束博！为了取回我们理所当然的权力，我们得毁灭那些在§Y星坛§!上的可悲之人。"
  SOPA_DESTROY_SOP_1:0 "锁定誓约坐标"
  SOPA_DESTROY_SOP_1_DESC:0 "锁定誓约坐标行动描述"
+
+ crisobj_hunt_sop_leaders_name:0 "狩捕§Y星之誓约§!领袖"
+ crisobj_hunt_sop_leaders_desc:0 "狩捕散落在宇宙中的§Y星之誓约§!领袖"
+
+

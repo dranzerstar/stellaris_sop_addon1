@@ -44,14 +44,17 @@ country_event={
 	title = "sopa.8119.title"
 	desc = "sopa.8119.desc"
 	immediate = {
-		establish_communications_no_message = event_target:sopa_destroyed
-
-
+		establish_communications_no_message = event_target:sop_destroyed_contact
+		set_global_flag = sopa_activated
+		
 
 	
 
 		if={    limit={ exists=event_target:star_oath_country  }
-				destroy_country = event_target:star_oath_country 
+			event_target:star_oath_country={
+				destroy_country = yes
+			}
+				
 		} 
 	}
 

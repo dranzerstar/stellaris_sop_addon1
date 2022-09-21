@@ -182,13 +182,13 @@ country_event={
 	is_triggered_only = yes
 
 	diplomatic = yes
-	custom_gui = star_oath_main_window
+	custom_gui = star_oath_main_window_destroyed
 
 	picture_event_data = {
 		##portrait = SOP_alma44_default
-		room = star_oath_room
+		#room = star_oath_destroyed_room
 	}
-	title = "sopa.5000.title"
+	#title = "sopa.5000.title"
 	desc = "sopa.5000.desc"
 
 
@@ -202,13 +202,11 @@ country_event={
 
 	option = {
 		name = "close"
-		custom_gui = "star_oath_none_option"
+		custom_gui = "star_oath_main_window_option"
 		
 	}
 
-	option={
-		name=OK
-	}
+
 }
 
 

@@ -38,7 +38,7 @@ menp_sopa_destroy = {
 	}
 
 	on_unlock = {
-		custom_tooltip = menp_sopa_destroy_desc
+		custom_tooltip = menp_sopa_destroy_desc_tooltip
 	}
 }
 

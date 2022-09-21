@@ -23,7 +23,7 @@ sopa_controller = {
 		standard_event_module = {}
 		standard_leader_module = {}
 		exclusive_diplomacy_module = {
-			contact_rule = script_only
+			contact_rule = on_action_only
 		}
 	}
 }
@@ -50,7 +50,7 @@ star_oath_project_destroyed={
 	modules = {
 		basic_technology_module = {}
 		exclusive_diplomacy_module = {
-			contact_rule = script_only
+			contact_rule = on_action_only
 		}
 	}
 
